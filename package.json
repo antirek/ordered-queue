@@ -1,0 +1,29 @@
+{
+  "name": "queue-order",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "example:simple": "node examples/simple-example.js",
+    "example:advanced": "node examples/advanced-example.js",
+    "example:ordered": "node examples/ordered-queue-example.js",
+    "example:simulation": "node examples/ordered-queue-simulation.js",
+    "redis:up": "docker-compose up -d",
+    "redis:down": "docker-compose down",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bullmq": "^5.58.4",
+    "dotenv": "^17.2.1",
+    "ioredis": "^5.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "nodemon": "^3.1.10"
+  }
+}
